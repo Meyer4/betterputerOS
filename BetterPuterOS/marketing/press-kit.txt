@@ -1,0 +1,7 @@
+BetterPuterOS – The beautiful, fast, and free Linux OS for everyone, with 1TB free cloud storage.
+
+- Website: https://betterputeros.org (or GitHub Pages)
+- Logo and hero assets: see /website
+- Screenshots: see /website/hero-desktop.png (add your own)
+- Contact: hello@betterputeros.org
+- Social: @BetterPuterOS on Twitter/X, GitHub, Discord
