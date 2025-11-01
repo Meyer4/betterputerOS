@@ -1,59 +1,146 @@
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f7f8fa;
+  background: #f8fafd;
   color: #222;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background: #6c63ff;
+  background: linear-gradient(120deg,#6c63ff 70%,#2cd4d9 100%);
   color: #fff;
   text-align: center;
-  padding: 2em 1em 1em 1em;
+  padding: 3em 1em 2em 1em;
+  border-radius: 0 0 40px 40px;
 }
 
-header img {
-  height: 64px;
+.hero-logo {
+  height: 74px;
   margin-bottom: 1em;
+  box-shadow: 0 2px 8px rgba(44,212,217,0.08);
 }
 
 h1 {
   margin: 0.2em 0 0.5em 0;
-  font-size: 2.4em;
+  font-size: 2.7em;
+  letter-spacing: -1px;
+  font-weight: 700;
 }
 
-h2 {
-  text-align: center;
-  color: #6c63ff;
+.subtitle {
+  margin: 0.2em 0 1.5em 0;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.accent {
+  color: #ffe082;
+  font-weight: 600;
+}
+
+.header-buttons {
+  margin-top: 1.3em;
+}
+.btn {
+  background: #2cd4d9;
+  color: #fff;
+  border: none;
+  padding: 0.9em 2em;
+  border-radius: 999px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0.5em 0.5em 0 0.5em;
+  box-shadow: 0 2px 8px rgba(44,212,217,0.11);
+  transition: background 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn:hover, .main-btn:hover {
+  background: #6c63ff;
+}
+.main-btn {
+  background: #6c63ff;
+}
+.main-btn:hover {
+  background: #2cd4d9;
+}
+.big {
+  font-size: 1.25em;
+  padding: 1.1em 3em;
   margin-top: 2em;
 }
 
-main {
-  max-width: 600px;
-  margin: 2em auto;
-  padding: 1.5em;
+.features {
+  margin: 3em 0 0 0;
+}
+.features h2 {
+  text-align: center;
+  color: #6c63ff;
+  font-size: 2em;
+}
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  margin: 2em 0 0 0;
+}
+.feature {
   background: #fff;
   border-radius: 16px;
-  box-shadow: 0 2px 16px rgba(108,99,255,0.06);
+  box-shadow: 0 2px 16px rgba(108,99,255,0.07);
+  padding: 1.5em 1.2em 1.1em 1.2em;
+  width: 220px;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+.feature:hover {
+  box-shadow: 0 4px 24px rgba(44,212,217,0.10);
+}
+.feature img {
+  height: 48px;
+  margin-bottom: 0.7em;
+}
+.feature h3 {
+  margin: 0.4em 0 0.2em 0;
+  color: #2cd4d9;
+  font-size: 1.12em;
+}
+.feature p {
+  margin: 0.2em 0 0 0;
+  color: #555;
+  font-size: 1em;
 }
 
-ul {
+.guarantee {
+  background: #f3f7fd;
+  border-radius: 18px;
+  max-width: 720px;
+  margin: 3em auto 0 auto;
+  padding: 2em 2em 1em 2em;
+  box-shadow: 0 2px 12px rgba(44,212,217,0.05);
+}
+.guarantee h2 {
+  color: #333;
+  font-size: 1.4em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.guarantee ul {
   list-style: none;
   padding: 0;
-  margin: 1.5em 0;
+  margin: 0.9em 0 0.5em 0;
+}
+.guarantee li {
+  font-size: 1.13em;
+  margin: 1em 0;
+  color: #222;
 }
 
-ul li {
-  padding: 0.6em 0;
-  font-size: 1.1em;
-  border-bottom: 1px solid #eee;
-  display: flex;
-  align-items: center;
-}
-
-ul li:last-child {
-  border-bottom: none;
+.cta {
+  text-align: center;
+  margin: 3em 0 2em 0;
 }
 
 footer {
@@ -62,45 +149,58 @@ footer {
   padding: 2em 0 1em 0;
   margin-top: 3em;
   font-size: 0.97em;
+  background: #f5f7fb;
+  border-radius: 30px 30px 0 0;
 }
-
-button, .btn {
-  background: #2cd4d9;
-  color: #fff;
-  border: none;
-  padding: 0.8em 2em;
-  border-radius: 999px;
-  font-size: 1.1em;
-  cursor: pointer;
-  margin: 1em 0.5em 0 0.5em;
-  box-shadow: 0 2px 8px rgba(44,212,217,0.11);
-  transition: background 0.2s;
+.footer-links {
+  margin-top: 1em;
 }
-
-button:hover, .btn:hover {
-  background: #6c63ff;
+.footer-links a {
+  display: inline-block;
+  margin: 0 0.3em;
+}
+.footer-links img {
+  width: 32px;
+  vertical-align: middle;
+  opacity: 0.72;
+  transition: opacity 0.2s;
+}
+.footer-links img:hover {
+  opacity: 1;
 }
 
 .dark {
   background: #17182f;
   color: #e5e7fa;
 }
-
 .dark header {
-  background: #222348;
+  background: linear-gradient(120deg,#23234a 60%,#2cd4d9 100%);
   color: #fff;
 }
-
-.dark main {
+.dark main, .dark .feature, .dark .guarantee {
   background: #23234a;
   color: #e5e7fa;
-  box-shadow: 0 2px 16px rgba(44,212,217,0.08);
+  box-shadow: 0 2px 16px rgba(44,212,217,0.10);
 }
-
-.dark h2 {
+.dark .features h2 {
   color: #2cd4d9;
 }
-
+.dark .feature h3 {
+  color: #6c63ff;
+}
+.dark .guarantee {
+  background: #272744;
+}
+.dark .guarantee h2 {
+  color: #fff;
+}
+.dark .guarantee li {
+  color: #e5e7fa;
+}
+.dark footer {
+  background: #23234a;
+  color: #aaa;
+}
 ::-webkit-scrollbar {
   width: 10px;
   background: #e3e3e3;
