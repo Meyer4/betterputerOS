@@ -1,8 +1,11 @@
 # BetterPuterOS Source
 
-- Kernel: [planned]
-- Desktop: See `/desktop`
-- Cloud: See `/cloud`
-- Apps: Coming soon
+This folder will contain the core source code for BetterPuterOS, including:
 
-This is a placeholder for open-source development.
+- Kernel (planned)
+- Desktop environment (see `/desktop`)
+- Cloud integration (see `/cloud`)
+- Core applications
+
+**Note:**  
+Currently this is a placeholder for upcoming open-source development. Contributions and ideas are welcome!
